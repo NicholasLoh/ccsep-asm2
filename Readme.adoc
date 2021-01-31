@@ -1,0 +1,54 @@
+= Assignment
+
+In this assessment you will make a program in Java. You will show what the
+security bug is, how to detect and mitigate it.
+
+The program should contain the vulnerability that you have selected.
+You should write tests that cover all the functionality within
+your program (these tests are later used to verify that the patched version
+hasn't lost any functionality).
+
+You should create a patch branch in this repository.
+The patch branch should contain a patched version of 
+your program. 
+
+Along with your program, you should provide a proof of concept to
+demonstrate the vulnerability. This can be done in the following way:
+
+Unit/Integration test: write unit tests or integration tests that shows
+the security bug and later it fails. The test fails because the program is vulnerable.
+Your patched program will pass this test. 
+
+Use this repository as a template for your
+program. `clone` this repository locally on your computer.
+Your program main code should go to `src` directory.
+Your tests should go to `test` directory.
+
+IMPORTANT: Do not publicly `Fork` this repository. Do everything locally on your computer.
+
+== Submission
+
+See Blackboard.
+
+== Development
+
+This repository contain a sample Java program
+The program is vulnerable to Numeric Overflow.
+
+You can use it as a template for your program.
+
+=== Requirements
+
+Install `docker` and `make` on your system.
+
+=== Usage
+
+. Build the program: `make build`.
+. Run it: `make run`.
+. Run unit tests: `make test`.
+. Run security tests: `make securitytest`.
+
+[NOTE]
+--
+The last test will fail.
+--
